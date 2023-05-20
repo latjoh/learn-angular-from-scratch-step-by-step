@@ -23,37 +23,30 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CategoriesComponent,
-    CategoryQuestionsComponent,
-    NewQuestionModalComponent,
-    NewAnswerModalComponent,
-    UpdateAnswerModalComponent,
-    QuestionAnswersComponent,
-    DeleteQuestionModalComponent,
-    DeleteAnswerModalComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    SharedModule
-  ],
-  entryComponents: [
-    DeleteQuestionModalComponent,
-    DeleteAnswerModalComponent,
-    NewQuestionModalComponent,
-    NewAnswerModalComponent,
-    UpdateAnswerModalComponent
-  ],
-  providers: [
-    CategoriesService,
-    QuestionsService,
-    AnswersService,
-    CategoryQuestionsResolver,
-    CategoriesResolver,
-    QuestionAnswersResolver
-  ],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        CategoriesComponent,
+        CategoryQuestionsComponent,
+        NewQuestionModalComponent,
+        NewAnswerModalComponent,
+        UpdateAnswerModalComponent,
+        QuestionAnswersComponent,
+        DeleteQuestionModalComponent,
+        DeleteAnswerModalComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        SharedModule
+    ],
+    providers: [
+        CategoriesService,
+        QuestionsService,
+        AnswersService,
+        CategoryQuestionsResolver,
+        CategoriesResolver,
+        QuestionAnswersResolver
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

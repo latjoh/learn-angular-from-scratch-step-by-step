@@ -1,5 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { Validators, FormGroup, FormControl} from '@angular/forms';
+import { Validators, UntypedFormGroup, UntypedFormControl} from '@angular/forms';
 import { AnswersService } from '../../services/answers.service';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
 
@@ -12,7 +12,7 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
 
 export class UpdateAnswerModalComponent implements OnInit{
 
-  answerForm: FormGroup;
+  answerForm: UntypedFormGroup;
 
   constructor(
     public answersService: AnswersService,
@@ -23,8 +23,8 @@ export class UpdateAnswerModalComponent implements OnInit{
 
   ngOnInit(): void {
     console.log(this.modalData.answer);
-    this.answerForm = new FormGroup({
-      answer: new FormControl(this.modalData.answer.answer, Validators.required)
+    this.answerForm = new UntypedFormGroup({
+      answer: new UntypedFormControl(this.modalData.answer.answer, Validators.required)
     })
   }
 

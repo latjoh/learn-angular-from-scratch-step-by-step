@@ -1,0 +1,1 @@
+{"ast":null,"code":"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar Observable_1 = require(\"rxjs/internal/Observable\");\nexports.Observable = Observable_1.Observable;\n//# sourceMappingURL=Observable.js.map","map":null,"metadata":{},"sourceType":"script","externalDependencies":[]}

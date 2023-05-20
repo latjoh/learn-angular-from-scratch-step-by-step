@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject} from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { Validators, FormGroup, FormControl} from '@angular/forms';
+import { Validators, UntypedFormGroup, UntypedFormControl} from '@angular/forms';
 import { QuestionsService } from '../../services/questions.service';
 import { SlugifyPipe } from '../../shared/slugify.pipe';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
@@ -14,7 +14,7 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
 
 export class NewQuestionModalComponent implements OnInit{
 
-  questionForm: FormGroup;
+  questionForm: UntypedFormGroup;
 
   constructor(
     public questionsService: QuestionsService,
@@ -24,8 +24,8 @@ export class NewQuestionModalComponent implements OnInit{
   ){}
 
   ngOnInit(): void {
-    this.questionForm = new FormGroup({
-      question: new FormControl('', Validators.required)
+    this.questionForm = new UntypedFormGroup({
+      question: new UntypedFormControl('', Validators.required)
     })
   }
 

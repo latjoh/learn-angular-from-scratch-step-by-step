@@ -1,11 +1,11 @@
 import { forkJoin as observableForkJoin } from 'rxjs';
 import { Injectable } from '@angular/core';
-import { Resolve, ActivatedRouteSnapshot } from "@angular/router";
+import { ActivatedRouteSnapshot } from "@angular/router";
 import { QuestionsService } from '../services/questions.service';
 import { CategoriesService } from '../services/categories.service';
 
 @Injectable()
-export class CategoryQuestionsResolver implements Resolve<any> {
+export class CategoryQuestionsResolver  {
 
   constructor(
     private questionsService: QuestionsService,

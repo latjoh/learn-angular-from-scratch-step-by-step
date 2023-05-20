@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import { Resolve } from "@angular/router";
+
 import { CategoriesService } from "../services/categories.service";
 
 @Injectable()
-export class CategoriesResolver implements Resolve<any> {
+export class CategoriesResolver  {
 
   constructor(
     private categoriesService: CategoriesService
