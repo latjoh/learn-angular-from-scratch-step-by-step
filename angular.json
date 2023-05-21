@@ -32,7 +32,7 @@
               "src/styles.scss"
             ],
             "scripts": [],         
-             "es5BrowserSupport": true
+            // "es5BrowserSupport": true
           },
           "configurations": {
             "production": {
@@ -45,7 +45,7 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
+              //"extractCss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
@@ -139,7 +139,7 @@
       }
     }
   },
-  "defaultProject": "learn-angular-from-scratch",
+ // "defaultProject": "learn-angular-from-scratch",
   "cli": {
     "analytics": false
   }
